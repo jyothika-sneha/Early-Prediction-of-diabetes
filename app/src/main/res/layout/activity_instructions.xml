@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/instruction_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Instructions"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:paddingBottom="12dp" />
+
+        <TextView
+            android:id="@+id/instruction_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#CCCCCC"
+            android:textSize="16sp"
+            android:textIsSelectable="true"
+            android:text="Please fill out the prediction form with the following information:\n\n• High Blood Pressure: 0 = No, 1 = Yes\n• High Cholesterol: 0 = No, 1 = Yes\n• Cholesterol Check (last 5 years): 0 = No, 1 = Yes\n• BMI (Body Mass Index): Numeric (e.g., 24.5)\n• Smoker (100+ cigarettes in life): 0 = No, 1 = Yes\n• Stroke: 0 = No, 1 = Yes\n• Heart Disease or Heart Attack: 0 = No, 1 = Yes\n• Physical Activity (past 30 days): 0 = No, 1 = Yes\n• Fruit Consumption (1+ per day): 0 = No, 1 = Yes\n• Vegetable Consumption (1+ per day): 0 = No, 1 = Yes\n• Heavy Alcohol Consumption: 0 = No, 1 = Yes\n• Any Healthcare Coverage: 0 = No, 1 = Yes\n• Couldn’t See Doctor Due to Cost: 0 = No, 1 = Yes\n\n• General Health (GenHlth):\n  1 = Excellent\n  2 = Very Good\n  3 = Good\n  4 = Fair\n  5 = Poor\n\n• Mental Health Days (MentHlth): 0–30\n• Physical Health Days (PhysHlth): 0–30\n• Difficulty Walking or Climbing Stairs (DiffWalk): 0 = No, 1 = Yes\n• Sex: 0 = Female, 1 = Male\n\n• Age Group (Age):\n  1 = 18–24\n  2 = 25–29\n  3 = 30–34\n  4 = 35–39\n  5 = 40–44\n  6 = 45–49\n  7 = 50–54\n  8 = 55–59\n  9 = 60–64\n  10 = 65–69\n  11 = 70–74\n  12 = 75–79\n  13 = 80 or older\n\n• Education Level:\n  1 = Never attended school / Kindergarten only\n  2 = Elementary (Grades 1–8)\n  3 = Some high school (Grades 9–11)\n  4 = High school graduate / GED\n  5 = Some college / technical school\n  6 = College 4+ years\n\nOutcome:\n• Diabetes Status:\n  0 = No Diabetes\n  1 = Prediabetes or Diabetes" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="24dp">
+
+            <Button
+                android:id="@+id/btn_predict"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Predict"
+                android:textColor="#000000"
+                android:backgroundTint="#00E5B5"
+                android:layout_marginEnd="16dp" />
+
+            <Button
+                android:id="@+id/btn_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textColor="#000000"
+                android:backgroundTint="#B388FF" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">MyApp2</string>
+
+
+    <string name="diet_recommendations">
+        🥖 Carbohydrates (Focus on complex carbs)\n
+        ✅ Recommended:\n\n
+        • Whole grains – oats, brown rice, quinoa, barley, whole wheat\n
+        • Legumes – lentils, chickpeas, black beans\n
+        • Non-starchy vegetables – spinach, broccoli, cauliflower, bell peppers, carrots\n
+        • Fruits (in moderation) – berries (blueberries, strawberries), apples, pears\n\n
+        ❌ Avoid/Limit:\n\n
+        • Refined grains – white bread, white rice, pasta\n
+        • Sugary cereals\n
+        • Sweets and desserts – cakes, pastries, cookies\n
+        • Sugar-sweetened beverages – soda, fruit juices\n\n
+        📌 Why? Complex carbs are digested slowly, preventing spikes in blood sugar.\n\n
+
+        🍗 Proteins\n
+        ✅ Recommended:\n\n
+        • Lean meats – skinless chicken, turkey\n
+        • Fish – especially fatty fish like salmon, sardines, mackerel (rich in omega-3s)\n
+        • Eggs\n
+        • Low-fat dairy – Greek yogurt, skim milk, cottage cheese\n
+        • Plant-based proteins – tofu, tempeh, legumes, nuts (in moderation)\n\n
+        📌 Why? Proteins help maintain muscle mass and slow glucose absorption when eaten with carbs.\n\n
+
+        🍊 Vitamins (especially those that support blood sugar regulation)\n
+        ✅ Important Vitamins and Sources:\n\n
+        • Vitamin D\n
+        Sources: Fortified milk, eggs, salmon, sunlight\n
+        Benefit: Improves insulin sensitivity\n\n
+        • Vitamin B1 (Thiamine)\n
+        Sources: Legumes, whole grains, nuts, seeds\n
+        Benefit: Supports nerve health, especially important for diabetics\n\n
+        • Vitamin C\n
+        Sources: Berries, oranges, bell peppers, kiwi\n
+        Benefit: Antioxidant support, reduces inflammation\n\n
+        • Vitamin E\n
+        Sources: Nuts, seeds, spinach, broccoli\n
+        Benefit: Protects cells from oxidative stress\n\n
+        • Magnesium (bonus mineral!)\n
+        Sources: Almonds, spinach, avocados\n
+        Benefit: Helps with insulin action\n\n
+
+        📝 General Tips\n
+        • Eat small, frequent meals to avoid spikes.\n
+        • Count carbs if recommended by a doctor or dietitian.\n
+        • Stay hydrated – drink plenty of water.\n
+        • Limit alcohol and avoid smoking.
+    </string>
+
+</resources>
