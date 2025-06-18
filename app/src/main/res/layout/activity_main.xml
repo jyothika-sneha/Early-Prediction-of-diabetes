@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diabetes Predictor"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#121212"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Repeating Yes/No Questions -->
+
+        <!-- HighBP -->
+        <TextView android:text="High Blood Pressure" android:textColor="#121212"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <RadioGroup android:id="@+id/highbp_group"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton android:id="@+id/highbp_yes" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="Yes" />
+            <RadioButton android:id="@+id/highbp_no" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="No" />
+        </RadioGroup>
+
+        <!-- HighChol -->
+        <TextView android:text="High Cholesterol" android:textColor="#121212"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <RadioGroup android:id="@+id/highchol_group"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton android:id="@+id/highchol_yes" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="Yes" />
+            <RadioButton android:id="@+id/highchol_no" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="No" />
+        </RadioGroup>
+
+        <!-- CholCheck -->
+        <TextView android:text="Cholesterol Check" android:textColor="#121212"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <RadioGroup android:id="@+id/cholcheck_group"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton android:id="@+id/cholcheck_yes" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="Yes" />
+            <RadioButton android:id="@+id/cholcheck_no" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="No" />
+        </RadioGroup>
+
+        <!-- BMI -->
+        <TextView android:text="BMI" android:textColor="#121212"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <EditText android:id="@+id/bmi_input"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Enter BMI" android:inputType="numberDecimal"
+            android:backgroundTint="#333333" android:textColor="#121212"
+            android:textColorHint="#888888" />
+
+        <!-- Smoker -->
+        <TextView android:text="Smoker" android:textColor="#121212"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <RadioGroup android:id="@+id/smoker_group"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton android:id="@+id/smoker_yes" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="Yes" />
+            <RadioButton android:id="@+id/smoker_no" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="No" />
+        </RadioGroup>
+
+        <!-- Stroke -->
+        <TextView android:text="Stroke" android:textColor="#121212"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <RadioGroup android:id="@+id/stroke_group"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton android:id="@+id/stroke_yes" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="Yes" />
+            <RadioButton android:id="@+id/stroke_no" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="No" />
+        </RadioGroup>
+
+        <!-- Heart Disease or Attack -->
+        <TextView android:text="Heart Disease or Attack" android:textColor="#121212"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <RadioGroup android:id="@+id/heart_group"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton android:id="@+id/heart_yes" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="Yes" />
+            <RadioButton android:id="@+id/heart_no" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="No" />
+        </RadioGroup>
+
+        <!-- Physical Activity -->
+        <TextView android:text="Physical Activity" android:textColor="#121212"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <RadioGroup android:id="@+id/physactivity_group"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton android:id="@+id/physactivity_yes" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="Yes" />
+            <RadioButton android:id="@+id/physactivity_no" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="No" />
+        </RadioGroup>
+
+        <!-- Alcohol -->
+        <TextView android:text="Heavy Alcohol Consumption" android:textColor="#121212"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <RadioGroup android:id="@+id/alcohol_group"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton android:id="@+id/alcohol_yes" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="Yes" />
+            <RadioButton android:id="@+id/alcohol_no" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="No" />
+        </RadioGroup>
+
+        <!-- Healthcare -->
+        <TextView android:text="Any Healthcare Access" android:textColor="#121212"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <RadioGroup android:id="@+id/anyhealthcare_group"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton android:id="@+id/anyhealthcare_yes" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="Yes" />
+            <RadioButton android:id="@+id/anyhealthcare_no" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="No" />
+        </RadioGroup>
+
+        <!-- No Doctor Due to Cost -->
+        <TextView android:text="No Doctor Visit Due to Cost" android:textColor="#121212"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <RadioGroup android:id="@+id/nodoccost_group"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton android:id="@+id/nodoccost_yes" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="Yes" />
+            <RadioButton android:id="@+id/nodoccost_no" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="No" />
+        </RadioGroup>
+
+        <!-- GenHlth -->
+        <TextView android:text="General Health (1–5)" android:textColor="#121212"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <EditText android:id="@+id/genhlth_input"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Enter 1 (best) to 5 (worst)" android:inputType="number"
+            android:backgroundTint="#333333" android:textColor="#121212"
+            android:textColorHint="#888888" />
+
+        <!-- MentHlth -->
+        <TextView android:text="Mental Health Days (0–30)" android:textColor="#121212"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <EditText android:id="@+id/menthlth_input"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Enter number of days" android:inputType="number"
+            android:backgroundTint="#333333" android:textColor="#121212"
+            android:textColorHint="#888888" />
+
+        <!-- PhysHlth -->
+        <TextView android:text="Physical Health Days (0–30)" android:textColor="#121212"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <EditText android:id="@+id/physhlth_input"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Enter number of days" android:inputType="number"
+            android:backgroundTint="#333333" android:textColor="#121212"
+            android:textColorHint="#888888" />
+
+        <!-- Sex -->
+        <TextView android:text="Sex" android:textColor="#121212"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <RadioGroup android:id="@+id/sex_group"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton android:id="@+id/sex_female" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="Female" />
+            <RadioButton android:id="@+id/sex_male" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="Male" />
+        </RadioGroup>
+
+        <!-- Age -->
+        <TextView android:text="Age Category (1–13)" android:textColor="#121212"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <EditText android:id="@+id/age_input"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Enter age category" android:inputType="number"
+            android:backgroundTint="#333333" android:textColor="#121212"
+            android:textColorHint="#888888" />
+
+        <!-- Education -->
+        <TextView android:text="Education Level (1–6)" android:textColor="#121212"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <EditText android:id="@+id/education_input"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Enter education level" android:inputType="number"
+            android:backgroundTint="#333333" android:textColor="#121212"
+            android:textColorHint="#888888" />
+
+        <!-- Predict Button -->
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status: "
+            android:textColor="#4CAF50"
+            android:textSize="18sp"
+            android:paddingTop="16dp" />
+
+        <TextView
+            android:id="@+id/confidence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confidence: "
+            android:textColor="#FF9800"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/predict_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Predict"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#2196F3"
+            android:layout_marginTop="24dp" />
+
+
+        <!-- Results -->
+
+
+        <!-- Results -->
+
+        <TextView
+            android:id="@+id/diet_recommendations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFCDD2"
+            android:textSize="16sp"
+            android:paddingTop="12dp"
+            android:visibility="gone" />
+
+
+        <!-- Dietary Recommendations Button (initially hidden) -->
+
+        <Button
+            android:id="@+id/diet_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dietary Recommendations"
+            android:visibility="gone" />
+    </LinearLayout>
+</ScrollView>
