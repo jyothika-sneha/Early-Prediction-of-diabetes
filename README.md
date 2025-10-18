@@ -2,10 +2,10 @@
 # 🩺 Early Prediction of Diabetes
 *A Machine Learning–based Android application for predicting the likelihood of diabetes using health and lifestyle data.*
 
-![GitHub repo size](https://img.shields.io/github/repo-size/jyothika-sneha/Early-Prediction-of-diabetes?color=brightgreen)
+<!--![GitHub repo size](https://img.shields.io/github/repo-size/jyothika-sneha/Early-Prediction-of-diabetes?color=brightgreen)
 ![GitHub last commit](https://img.shields.io/github/last-commit/jyothika-sneha/Early-Prediction-of-diabetes?color=blue)
 ![GitHub license](https://img.shields.io/github/license/jyothika-sneha/Early-Prediction-of-diabetes?color=yellow)
-
+-->
 ---
 
 ## 📘 Overview
@@ -39,31 +39,38 @@ This project demonstrates how real-world healthcare data can be leveraged to ass
 ## 🏗️ System Architecture
 
                ┌──────────────────────────────┐
-               │  BRFSS Health Dataset         │
-               │  (Historical Health Data)     │
+               │  BRFSS Health Dataset        │
+               │  (Historical Health Data)    │
                └─────────────┬────────────────┘
                              │
                              ▼
                ┌──────────────────────────────┐
-               │  Data Preprocessing           │
-               │  - Cleaning & Imputation      │
-               │  - Feature Scaling/Encoding   │
+               │  Data Preprocessing          │
+               │  - Cleaning & Encoding       │
+               │  - Feature Scaling           │
                └─────────────┬────────────────┘
                              │
                              ▼
                ┌──────────────────────────────┐
-               │  Model Training (Python)      │
-               │  - Random Forest Classifier   │
-               │  - Evaluation Metrics         │
+               │  Model Training (Python)     │
+               │  - Random Forest Classifier  │
+               │  - Evaluation Metrics        │
                └─────────────┬────────────────┘
                              │
                              ▼
                ┌──────────────────────────────┐
-               │  Android Application          │
-               │  - User Input Form            │
-               │  - Local Prediction Logic     │
-               │  - Output Display             │
+               │  Model Conversion            │
+               │  - Export as .tflite file    │
+               └─────────────┬────────────────┘
+                             │
+                             ▼
+               ┌──────────────────────────────┐
+               │  Android App (Java)          │
+               │  - User Input Form           │
+               │  - Load .tflite Model        │
+               │  - Run Local Inference       │
                └──────────────────────────────┘
+
 ## 📊 Dataset Details (BRFSS)
 
 - **Source:** Centers for Disease Control and Prevention (CDC)  
